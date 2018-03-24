@@ -1,0 +1,41 @@
+section{
+    margin-bottom: 5em;
+}
+
+.montserrat-medium{
+    color: #F04B23;
+    font-family: "Montserrat-Medium";
+}
+
+.montserrat-regular{
+    color: #F04B23;
+    font-family: "Montserrat-Regular";
+}
+
+.orkney-bold{
+    color: #F04B23; 
+    font-family: "Orkney-Bold";
+}
+
+
+
+#orange{
+    width: 100px;
+    height: 100px;
+    background: #F04B23;
+}
+#black{
+    width: 100px;
+    height: 100px;
+    background: #3D3937;
+}
+#light-gray{
+    width: 100px;
+    height: 100px;
+    background: #F7F7F7;
+}
+#bar{
+    width: 100px;
+    height: 100px;
+    background: #95989A;
+}
