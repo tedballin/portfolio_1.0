@@ -169,8 +169,8 @@ a.ln:hover {
 }
 
 .toggle-nav a {
-    color: #3D3937;
-    border-bottom: 2px solid #F04B23;
+    color: #F04B23;
+    border-bottom: 2px solid #3D3937;
 }
 
 #toggleNav {
