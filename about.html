@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
-
+    <link rel="icon" href="img/logo.png">
 </head>
 
 <body>
-    <div class="container">
+    <div class="wrapper">
         <div class="row header">
             <div class="navbar col-12">
                 <a class="navbar-brand" href="index.html">
@@ -28,56 +28,58 @@
 
         <div class="row">
             <div class="col-fixed-180 position-fixed">
-                    <ul class="navbar-nav side-nav">
-                        <li class="nav-item">
-                            <a class="nav-btn" href="work.html">work</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-btn active" href="bio.html">about</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-btn" href="contact.html">contact</a>
-                        </li>
-                    </ul>
+                <ul class="navbar-nav side-nav">
+                    <li class="nav-item">
+                        <a class="nav-btn" href="work.html">work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-btn active" href="about.html">about</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-btn" href="contact.html">contact</a>
+                    </li>
+                </ul>
             </div>
 
-                <div id="toggleNav">
-                    <a class="closebtn" onclick="closeNav()">&times;</a>
-                        <ul class="toggle-nav">
-                            <li class="nav-item">
-                                <a href="#typography">work</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="bio.html">about</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="contact.html">contact</a>
-                            </li>
-                        </ul>
-                </div>
+            <div id="toggleNav">
+                <a class="closebtn" onclick="closeNav()">&times;</a>
+                <ul class="toggle-nav">
+                    <li class="nav-item">
+                        <a href="work.html">work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html">about</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html">contact</a>
+                    </li>
+                </ul>
+            </div>
 
 
-            <div class="col main-wrapper">
-                <h3>who is yang zhang?</h3>
-                <div class="row about justify-content-start align-items-center">
-                    <div class="col-sm-5 bio-img">
-                        <img class="img-fluid" src="img/about.png" alt="photo">
-                    </div>
-                    <div class="col-sm-6 bio ml-5">
+            <div class="col content-wrapper">
+                <div class="row about justify-content-center">
+                    <h3 class="col-8 text-center mb-5">who is yang zhang?</h3>
+                    <div class="row justify-content-center col-8">
+                        <div class="col-8 bio-img mb-5">
+                            <img src="img/about.png" alt="photo">
+                        </div>
+                        <div class="mb-5">
                             <p>I am a UI/UX designer and student of the Interactive Arts and Technology program at Simon Fraser
                                 University. I have a strong interest in user interface design and web development. My competence
-                                and design thinking skills have been developed through my school work, professional work and
-                                volunteer work. I strive to grow and learn as a person and as a designer.</p>
+                                and design thinking skills have been developed through my school work, professional work
+                                and volunteer work. I strive to grow and learn as a person and as a designer.</p>
                         </div>
-                    <div class="col-12 bio-contact d-flex justify-content-between">
+                    </div>
+                    <div class="col-sm-8 text-center d-md-flex justify-content-between">
                         <p>Check out my
-                            <a href="#">Resume</a>
+                            <a href="resume/18-1_Resume.pdf" target="_blank">Resume</a>
                         </p>
                         <p>Write to
-                            <a href="#">tedballin@gmail.com</a>
+                            <a href="mailto:me@yangzhang.ca">me@yangzhang.ca</a>
                         </p>
                         <p>Connect on
-                            <a href="#">LinkedIn</a>
+                            <a href="https://www.linkedin.com/in/yang-zhang-1502623a/">LinkedIn</a>
                         </p>
                     </div>
                 </div>
@@ -85,7 +87,7 @@
         </div>
 
     </div>
-   
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"

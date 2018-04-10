@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
-
+    <link rel="icon" href="img/logo.png">
 </head>
 
 <body>
-    <div class="container">
+    <div class="wrapper">
         <div class="row header">
             <div class="navbar col-12">
                 <a class="navbar-brand" href="index.html">
@@ -33,7 +33,7 @@
                         <a class="nav-btn" href="work.html">work</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-btn" href="bio.html">about</a>
+                        <a class="nav-btn" href="about.html">about</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-btn active" href="contact.html">contact</a>
@@ -45,10 +45,10 @@
                 <a class="closebtn" onclick="closeNav()">&times;</a>
                 <ul class="toggle-nav">
                     <li class="nav-item">
-                        <a href="#typography">work</a>
+                        <a href="work.html">work</a>
                     </li>
                     <li class="nav-item">
-                        <a href="bio.html">about</a>
+                        <a href="about.html">about</a>
                     </li>
                     <li class="nav-item">
                         <a href="contact.html">contact</a>
@@ -56,9 +56,9 @@
                 </ul>
             </div>
 
-            <div class="col main-wrapper">
+            <div class="col content-wrapper">
                 <div class="row justify-content-center">
-                        <h2 class="col-10 text-center">Am I a good fit? Say hi and find out.</h2>
+                        <h2 class="col-8 text-center">Am I a good fit? Say hi and find out.</h2>
 
                         <form class="col-sm-8 mt-5 justify-content-center" action="mailto:yza314@sfu.ca" method="post" enctype="text/plain">
                             Full Name:
@@ -74,23 +74,23 @@
                             <textarea name="messasge"></textarea>
                             <br>
                             <br>
-                            <input class="btn-orange" type="submit" value="Send">
+                            <input type="submit" value="Send">
                         </form>
                         <div class="social-media col-sm-8 mt-5">
-                        <h4>You can also find me on:</h4>
-                        <div class="d-flex justify-content-between mt-5  ">
-                            <a href="#">
-                                <img class="sm-img" src="img/linkedin-logo.png" alt="social media icon">
-                            </a>
-                            <a href="#">
-                                <img class="sm-img" src="img/github-logo.png" alt="social media icon">
-                            </a>
-                            <a href="#">
-                                <img class="sm-img" src="img/behance-logo.png" alt="social media icon">
-                            </a>
-                            <a href="#">
-                                <img class="sm-img" src="img/facebook-logo.png" alt="social media icon">
-                            </a>
+                        <h4 class="text-center">You can also find me on:</h4>
+                        <div class="d-flex justify-content-between mt-5">
+                            <div style="font-size:3em; color:#95989A">
+                               <a href="https://www.linkedin.com/in/yang-zhang-1502623a/" target="_blank"><i class="fab fa-linkedin"></i></a> 
+                              </div>
+                              <div style="font-size:3em; color:#95989A">
+                                <a href="https://github.com/tedballin" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                        <div style="font-size:3em; color:#95989A">
+                            <a href="https://www.behance.net/tedz684d" target="_blank"><i class="fab fa-behance-square"></i></a>
+                        </div>
+                        <div style="font-size:3em; color:#95989A">
+                            <a href="https://www.instagram.com/tedballin_/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -104,6 +104,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
 </body>
 
 </html>

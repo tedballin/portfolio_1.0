@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
-
+    <link rel="icon" href="img/logo.png">
 </head>
 
 <body>
-    <div class="container">
+    <div class="wrapper">
         <div class="row header">
             <div class="navbar col-12">
                 <a class="navbar-brand" href="index.html">
@@ -33,7 +33,7 @@
                         <a class="nav-btn" href="work.html">work</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-btn" href="bio.html">about</a>
+                        <a class="nav-btn" href="about.html">about</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-btn" href="contact.html">contact</a>
@@ -45,10 +45,10 @@
                 <a class="closebtn" onclick="closeNav()">&times;</a>
                 <ul class="toggle-nav">
                     <li class="nav-item">
-                        <a href="#typography">work</a>
+                        <a href="work.html">work</a>
                     </li>
                     <li class="nav-item">
-                        <a href="bio.html">about</a>
+                        <a href="about.html">about</a>
                     </li>
                     <li class="nav-item">
                         <a href="contact.html">contact</a>
@@ -57,68 +57,95 @@
             </div>
 
 
-            <div class="col main-wrapper">
+            <div class="col content-wrapper">
                 <div class="row justify-content-center">
-                    <div class="col-sm-12 text-center">
-                        <img src="img/lamour.png" alt="cover">
-                    </div>
-                    <div class="col-10 project-description mx-auto text-center">
-                        <h3>Lamouar Wedding</h3>
-                        <hr />
-                        <p>Lamouar Wedding is a commercial website of a wedding and event planning studio in Vancouver BC</p>
+                    <div class="col-11 text-center project-container">
+                        <img src="img/lamour_1.png" alt="cover">
+                        <div class="project-title">
+                            <h1>Lamour Weddings</h1>
+                        </div>
+                        <hr class="mt-5" />
                     </div>
 
-                    <div class="col-sm-7">
-                        <h5>Process:</h5>
+                    <div class="col-sm-8 project-section ">
+                        <h4 class="subtitle">The Project</h4>
                         <p>This website was created for a wedding and event planning studio, and I completed this project with
                             another design student from Emily Carr University. All we knew was the studio was looking to
                             update their website, and we have two weeks to design and develop an website, and if we get selected,
-                            we would continue work on the website and get compensate.
-                            <br>
-                            <br> We first looked into the existing website and concluded that the main purposes of the website
-                            is for displaying the weddings and events the studio has planned and designed in the past, and
-                            allowing the potential customers contact the studio in a direct manner. Considering the wedding
-                            and event planning has to be visually appealing, my partner and I decided that we need to use
-                            lots of visual elements such as videos and images to show off the work the studio has done. In
-                            terms of visual design, my partner hand drawn a new logo, and I selected the font and color of the website;
-                            I was also responsible for the web design and development: in order maximize viewers’ visual experience,
-                            I used side navigation which only shows when the cursor is hover on top. I created the carousel effect with JavaScript
-                            so that the viewers can see series of images of a wedding case or event
-                            and lead them to click and view the details. On the home page, the contact form allows the viewers
-                            to send their message, so the studio can respond to customers’ request through their prefered way of communication.
-
-                        </p>
+                            we would continue work on the website and get compensate.</p>
                     </div>
+
+                    <div class="col-sm-5 ">
+                        <figure>
+                            <img src="img/lamour_about.png" alt="process">
+                            <img src="img/lamour_contact.png" alt="process">
+                        <figcaption class="caption demo-caption">Lamour 1.0: about & contact page</figcaption>
+                    </figure>
+                    </div>
+
                     <div class="col-sm-3">
                         <p class="type-title">Type：
-                            <p/>
+                        </p>
                             <p>Web Development Self-Initiated Project
                             </p>
                             <p class="type-title">Tools：</p>
-                            <p>HTML5, CSS3, JavaScript, jQuery 
+                            <p>HTML5, CSS3, JavaScript, jQuery
                             </p>
                             <p class="type-title">GitHub Repo:</p>
-                            <a href="#">URL</a>
+                            <p>
+                                <a href="#">Link</a>
+                            </p>
                     </div>
-                    <div class="col-sm-10 process-img text-center my-5">
-                        <img src="img/lamour-process1.png" alt="process">
-                        <p class="caption">Landing Page</p>
+                    <div class="col-sm-8 project-section">
+                        <h4 class="subtitle">Stretegy</h4>
+                        <p>We first looked into the existing website and concluded that the main purposes of the website is
+                            for displaying the weddings and events the studio has planned and designed in the past, and allowing
+                            the potential customers contact the studio in a direct manner. Considering the wedding and event
+                            planning has to be visually appealing, my partner and I decided that we need to use lots of visual
+                            elements such as videos and images to show off the work the studio has done.</p>
                     </div>
-                    <div class="col-sm-10 mb-5">
-                        <h5>Reflection:</h5>
-                        <p>Lamouar Wedding was my very first freelance web design and development project, although our proposal
-                            did not get selected by the client, the experience was extremely valuable. In a short period
-                            of time, we researched and analyzed what are the important elements of this website, and how
-                            to utilize the website to lead to potential business. By working with a design student from different
-                            program at different school, I was able to adapt and learned how to work with people who have
-                            different knowledge background and mindset. I also learned some design tips from her during the
-                            process.
+
+                    <div class="col-sm-8">
+                        <figure>
+                            <img src="img/lamour-process1.png" alt="process">
+                            <figcaption class="caption text-center">Lamour 1.0: home page</figcaption>
+                        </figure>
+                        </div>
+
+                    <div class="col-sm-8 project-section">
+                        <h4 class="subtitle">Process</h4>
+                        <p> In terms of visual design, my partner hand drawn a new logo, and I selected the font and color of
+                            the website; I was also responsible for the web design and development: in order maximize viewers’
+                            visual experience, I used side navigation which only shows when the cursor is hover on top. I
+                            created the carousel effect with JavaScript so that the viewers can see series of images of a
+                            wedding case or event and lead them to click and view the details. On the home page, the contact
+                            form allows the viewers to send their message, so the studio can respond to customers’ request
+                            through their prefered way of communication.
                         </p>
-                        <img class="mt-5" src="img/lamour-process2.png" alt="render">
-                        <p class="caption text-center">Gallery Page</p>
                     </div>
-                    <div class="mb-5">
-                        <a class="btn-orange" href="#">Another one?</a>
+
+                    <div class="col-sm-8">
+                        <figure>
+                            <img src="img/lamour-process2.png" alt="process">
+                            <figcaption class="caption text-center">Lamour 1.0: gallery page</figcaption>
+                        </figure>
+                        </div>
+
+                        <div class="col-sm-8 project-section">
+                                <h4 class="subtitle">Reflection</h4>
+                                <p>Lamour Wedding was my very first freelance web design and development project, although our proposal
+                                        did not get selected by the client, the experience was extremely valuable. In a short period
+                                        of time, we researched and analyzed what are the important elements of this website, and how
+                                        to utilize the website to lead to potential business. By working with a design student from different
+                                        program at different school, I was able to adapt and learned how to work with people who have
+                                        different knowledge background and mindset. I also learned some design tips from her during the
+                                        process.
+                                </p>
+                        <img class="mt-5" src="img/lamour.png" alt="render">
+                        <p class="caption text-center">Lamour 1.0: service page</p>
+                    </div>
+                    <div class="col-sm-8 text-center mb-5">
+                        <a class="btn-orange" href="novii-app.html">Another project?</a>
                     </div>
                 </div>
             </div>

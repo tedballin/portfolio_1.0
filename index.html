@@ -7,12 +7,13 @@
     <title>Yang Zhang. Portfolio.</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
+    <link rel="icon" href="img/logo.png" type="image">
     <link rel="stylesheet" href="css/main.css">
 
 </head>
 
 <body>
-    <div class="container">
+    <div class="wrapper">
         <div class="row header">
             <div class="navbar col-12">
                 <a class="navbar-brand" href="index.html">
@@ -27,45 +28,58 @@
 
 
         <div class="row">
-                <div class="col-fixed-180 position-fixed">
-                        <ul class="navbar-nav side-nav">
-                            <li class="nav-item">
-                                <a class="nav-btn" href="work.html">work</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-btn" href="bio.html">about</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-btn" href="contact.html">contact</a>
-                            </li>
-                        </ul>
-                </div>
-    
-                    <div id="toggleNav">
-                        <a class="closebtn" onclick="closeNav()">&times;</a>
-                            <ul class="toggle-nav">
-                                <li class="nav-item">
-                                    <a href="#typography">work</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="bio.html">about</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="contact.html">contact</a>
-                                </li>
-                            </ul>
-                    </div>
-
-            <div class="col main-wrapper">
-                <div class="row justify-content-center">
-                    <h2 class="col-6">yang zhang</h2>
-                <img class="d-img" src="img/landing.png" alt="landing">
+            <div class="col-fixed-180 position-fixed">
+                <ul class="navbar-nav side-nav">
+                    <li class="nav-item">
+                        <a class="nav-btn" href="work.html">work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-btn" href="about.html">about</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-btn" href="contact.html">contact</a>
+                    </li>
+                </ul>
             </div>
+
+            <div id="toggleNav">
+                <a class="closebtn" onclick="closeNav()">&times;</a>
+                <ul class="toggle-nav">
+                    <li class="nav-item">
+                        <a href="work.html">work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html">about</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html">contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col content-wrapper">
+                <div class="row">
+                    <div class="col-12 d-md-flex justify-content-between">
+                        <div class="d-flex flex-column justity-content-end">
+                            <h2 class="index_name">yang zhang</h2>
+                            <div class="index_slogan">
+                                <h4>create delightful digital experience
+                                    <span class="index_period">.</span>
+                                </h4>
+                            </div>
+                        </div>
+                        <img class="fluid-image d-img" src="img/landing.png" alt="landing">
+                    </div>
+                </div>
+            </div>
+            <footer class="col-12 text-center">
+                
+                <p>Coded by Yang Zhang in Vancouver, BC
+                    <p>
+                <a class="mx-1"href="https://github.com/tedballin/portfolio_1.0" target="_blank">Github link</a>
+                <a class="mx-1" href="styleguide.html">Style guide</a>
+            </footer>
         </div>
-
-
-        <footer class="col-12 text-center mt-5"><p>Coded by Yang Zhang in Vancouver, BC <p>
-        </footer>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
