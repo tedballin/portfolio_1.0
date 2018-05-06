@@ -59,22 +59,15 @@
             <div class="col content-wrapper">
                 <div class="row justify-content-center">
                         <h2 class="col-8 text-center">Am I a good fit? Say hi and find out.</h2>
-
-                        <form class="col-sm-8 mt-5 justify-content-center" action="mailto:me@yangzhang.ca" method="post" enctype="text/plain">
-                            Full Name:
-                            <br>
-                            <input type="text" name="name">
-                            <br> 
-                            Email Adress:
-                            <br>
-                            <input type="text" name="mail">
-                            <br> 
-                            Message:
-                            <br>
-                            <textarea name="messasge"></textarea>
-                            <br>
-                            <br>
-                            <input type="submit" value="Send">
+                        <div id="form-messages"></div>
+                        <form class="col-sm-8 mt-5 justify-content-center" id="ajax-contact" method="POST" action="mailer.php">
+                            <label for="inputName">Name:</label>
+                            <input type="text" id="inputName" name="name" required>
+                            <label for="inputEmail">Email:</label>
+                            <input type="email" id="inputEmail" name="email" required>
+                            <label for="inputMessage">Message:</label>
+                            <textarea name="message" id="inputMessage" required></textarea>
+                            <input type="submit" id="submit-btn" value="Send Message" >
                         </form>
                         <div class="social-media col-sm-8 mt-5">
                         <h4 class="text-center">You can also find me on:</h4>
@@ -97,8 +90,7 @@
             </div>
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"

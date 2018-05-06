@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Yang Zhang. Portfolio.</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="img/logo.png">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="row header">
+            <div class="navbar col-12">
+                <a class="navbar-brand" href="index.html">
+                    <img class="logo" src="img/logo.png" alt="logo">
+                </a>
+                <div class="navbar-nav">
+                    <span class="toggle" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+                    <a class="ln" href="#">language</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-fixed-180 position-fixed">
+                <ul class="navbar-nav side-nav">
+                    <li class="nav-item">
+                        <a class="nav-btn" href="work.html">work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-btn" href="about.html">about</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-btn" href="contact.html">contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="toggleNav">
+                <a class="closebtn" onclick="closeNav()">&times;</a>
+                <ul class="toggle-nav">
+                    <li class="nav-item">
+                        <a href="work.html">work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html">about</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html">contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col content-wrapper">
+                <div class="row justify-content-center">
+                    <div class="col-11 text-center project-container">
+                        <img src="img/dlist_1.png" alt="cover">
+                        <div class="project-title">
+                            <h1>DList</h1>
+                        </div>
+                        <hr class="mt-5" />
+                    </div>
+
+                    <div class="col-sm-8 project-section ">
+                        <h4 class="subtitle">The Project</h4>
+                        <p>DList is a web application that helps users search for physicians and save the physicians they are
+                            seeing or want to see to a personal list under “myphysicians” page. Both registered and non-register
+                            users can search for physicians with the specializations and criteria they need. Registered users
+                            will be able to save any physicians to their personal lists; they also can modify their lists,
+                            give ratings and add comments to physicians.
+                        </p>
+                    </div>
+                    <div class="col-sm-5">
+                            <figure>
+                                    <video class="embed-responsive mx-auto" autoplay loop controls muted>
+                                        <source src="img/video/search&add.mov" type="video/mp4">
+                                    </video>
+                                    <figcaption class="caption text-center mb-5">Searching and adding physicians</figcaption>
+                                </figure>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <h5 class="type-title">Type：</h5>
+                        <p>Web Development
+                            <br>
+                            <b>Academic Project</b>
+                        </p>
+                        <h5 class="type-title">Tools：</h5>
+                        <p>PHP, MySql, AJAX
+                        </p>
+                        <h5 class="type-title">Git Repository:</h5>
+                        <p>
+                            <a href="https://github.com/tedballin/DList" target="_blank" class="project-link">Link</a>
+                        </p>
+                        <h5 class="type-title">Team:</h5>
+                        <p>Jin Du
+                        </p>
+                    </div>
+
+                    <div class="col-sm-8 project-section">
+                        <h4 class="subtitle">The Problem:</h4>
+                        <p>It is hard to find family doctors nowadays, sometimes people simply don't have the recourses to find family
+                            doctors and they don't know doctors' availability to take new patients. For people who need special medical care,
+                            they often don't have enough information about the specialists they are going to see (in terms
+                            of professional knowledge or helpfulness etc). It is hard to find a "right" doctor.
+                        </p>
+                    </div>
+
+                    <div class="col-sm-8 project-section">
+                        <h4 class="subtitle">Website Design:</h4>
+                        <p>I first started by designing the structure and navigation model of the website. As the sitemap shown
+                            below, each page is coordinated with different functionalities. The website is designed for both
+                            visitors and registered members: both non-register and registered users can browse and search
+                            for physicians with filter options. Search criteria include location, gender, and availability
+                            to take new patients etc. In order to ensure the credibility of the content, only registered
+                            users are allowed to give ratings and comments to physicians. In addition, the members can generate
+                            and manage their "myphysicians" lists with personal notes.
+                        </p>
+                    </div>
+                    <div class="row col-sm-8">
+                        <figure class="text-center">
+                            <img class="mt-3" src="img/dlist_sitemap.png" alt="data">
+                            <figcaption class="caption text-center">Structure & Navigation Model (sitemap)</figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col-sm-8 project-section">
+                        <h4 class="subtitle">Database Design:</h4>
+                        <p> We imported data from CPSBC that is relevant to the information about physicians, such as their name,
+                            specialty, address, and contact number etc. I created the ER diagram that shows different entities,
+                            properties, and relationships. We used it as the blueprint when creating data tables in phpMyAdmin.</p>
+                    </div>
+                    <div class="row col-sm-8 justify-content-between">
+                        <figure class="text-center">
+                            <img class="mt-3" src="img/er&dbtables.png" alt="data">
+                            <figcaption class="caption text-center">ER diagram & Database tables</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-sm-8 project-section">
+                        <h4 class="subtitle">Development Process</h4>
+                        <p> I built the most part of this website, and I applied techniques (PHP, MySql, AJAX) learned from the
+                            course to power the backend of DList. For the login and registration system, I used cookies and
+                            sessions to store and carry user information between pages. For the search function, I used user
+                            inputs to perform dynamic queries and get the result from MySql database. I also created the
+                            ratings and commenting system using PHP and JavaScript, and when users submit their feedback,
+                            the call will be realized by AJAX without reloading the whole page.
+                        </p>
+                    </div>
+                    <div class="row col-sm-8">
+                        <figure>
+                                <video class="embed-responsive mx-auto" autoplay loop controls muted>
+                                    <source src="img/video/rate&comment.mov" type="video/mp4">
+                                </video>
+                                <figcaption class="caption text-center mb-5">Rating and commenting system</figcaption>
+                            </figure>
+                    </div>
+
+                    <div class="col-sm-8 project-section">
+                        <h4 class="subtitle">Reflection</h4>
+                        <p>DList was an interesting project. Through the development process, I had a better understanding of
+                            the server-client relationship and request-response. I was able to apply conceptual knowledge
+                            by programming the website using PHP, AJAX, and MySql database. In the future, I would like to add
+                            a recommendation feature that suggests physicians in the user's area and optimize my code for
+                            better readability and efficiency.
+                        </p>
+                        <figure>
+                            <img class="mt-5" src="img/dlist.png" alt="render">
+                        </figure>
+                    </div>
+                    <div class="col-sm-8     text-center mb-5">
+                        <a class="btn-orange" href="novii-app.html">Another project?</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

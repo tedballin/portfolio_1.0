@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Yang Zhang. Portfolio.</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="img/logo.png">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="row header">
+            <div class="navbar col-12">
+                <a class="navbar-brand" href="index.html">
+                    <img class="logo" src="img/logo.png" alt="logo">
+                </a>
+                <div class="navbar-nav">
+                    <span class="toggle" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+                    <a class="ln" href="#">language</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-fixed-180 position-fixed">
+                <ul class="navbar-nav side-nav">
+                    <li class="nav-item">
+                        <a class="nav-btn" href="work.html">work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-btn" href="about.html">about</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-btn" href="contact.html">contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="toggleNav">
+                <a class="closebtn" onclick="closeNav()">&times;</a>
+                <ul class="toggle-nav">
+                    <li class="nav-item">
+                        <a href="work.html">work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html">about</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html">contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col content-wrapper">
+                <div class="row justify-content-center">
+                    <div class="col-11 text-center project-container">
+                        <img src="img/icbc_1.png" alt="cover">
+                        <div class="project-title">
+                            <h2>ICBC Visual Analytics</h2>
+                        </div>
+                        <hr class="mt-5" />
+                    </div>
+
+                    <div class="col-sm-8 project-section ">
+                        <h4 class="subtitle">The Project</h4>
+                        <p>This data visualization project is designed to help explain the composition of ICBC claims costs
+                            in terms of collision frequency and types in Lower Mainland. Our interest in this topic is
+                            to further discover how property damage only (PDO) and casualty collisions contribute to the
+                            huge claims incurred operating costs that lead to ICBC's financial burden. The final visualizations
+                            could be used as a reference for future decision making for government officials and ICBC staff
+                            members.
+                        </p>
+                    </div>
+                    <div class="col-sm-5 ">
+                            <figure>
+                                <img src="img/collision-types.png" alt="process">
+                            <figcaption class="caption demo-caption">Final visualizations: Collision types and distribution</figcaption>
+                        </figure>
+                        </div>
+
+                    <div class="col-sm-3">
+                        <h5 class="type-title">Type：</h5>
+                        <p>Data Visualization
+                            <br>
+                            <b>Academic Project</b>
+                        </p>
+                        <h5 class="type-title">Tools：</h5>
+                        <p>HTML, CSS, D3.js
+                        </p>
+                        <h5 class="type-title">Git Repository:</h5>
+                        <p>
+                            <a href="https://github.com/tedballin/ICBC_Visual_Analytics" target="_blank" class="project-link">Link</a>
+                        </p>
+                        <h5 class="type-title">Team:</h5>
+                        <p>Linan Zhang
+                        </p>
+                    </div>
+
+                    <div class="col-sm-8 project-section">
+                        <h4 class="subtitle">Strategy:</h4>
+                        <p>Knowing the limited time and data resources we have, we narrowed the scope of the project and focused
+                            on the claims incurred costs. By asking problem questions such as: Is ICBC paying more for PDO
+                            or for injury claim? Do car crashes in each city have its own pattern depends on collision types?
+                            We searched categorical, ordinal, and quantitative data in order to generate visualizations that
+                            might help domain experts to solve the financial crisis.
+                        </p>
+                    </div>
+            
+                    <div class="col-sm-8 project-section">
+                        <h4 class="subtitle">Data Wrangling:</h4>
+                        <p>One of the biggest challenges was data cleaning. Since we need the data of collision types, accident
+                            count, collision locations and operating costs, ICBC became our major data resource. In the Lower Mainland crashes dataset, we removed the unused dimensions and filtered key information by programming.
+                            For information like operating costs, ICBC does not offer open dataset; we had to look through
+                            its financial report and manually create the dataset in the .csv file.
+                        </p>
+                    </div>
+                    <div class="row col-sm-8">
+                        <figure class="text-center">
+                            <img class="mt-3" src="img/data-wrangling.png" alt="data">
+                            <figcaption class="caption text-center">Data Wrangling: turning raw data into filtered .csv</figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col-sm-8 project-section">
+                        <h4 class="subtitle">Visualization Design:</h4>
+                        <p> I was mainly responsible for designing and implementing visualizations using JavaScript and D3.js
+                            library. For the key visualizations, I used a choropleth map to provide an overview of the collision
+                            frequency in Lower Mainland area, and also it allows the audiences to hover over the cities
+                            and look into the details. The categorical data and cities are showed on the map along with the
+                            quantitative crash count data.</p>
+                            <figure class="text-center my-5">
+                                    <img class="mt-3" src="img/icbc-sketch.png" alt="sketch">
+                                    <figcaption class="caption text-center">Initial ideas & sketches</figcaption>
+                            </figure>
+                        <p> I also created hexbin map to provide more detailed information on car accidents in each city combine
+                            such as accident distributions (street, latitude and longitude) and collision types by hovering
+                            over each spot. The two crash types as categorical attributes are differentiated by color hue
+                            in small pie charts.
+                        </p>
+                    </div>
+                    <div class="row col-sm-8 justify-content-between">
+                            <figure>
+                                    <video class="embed-responsive mx-auto" autoplay loop controls muted>
+                                        <source src="img/video/final-vis.mp4" type="video/mp4">
+                                    </video>
+                                    <figcaption class="caption text-center mb-5">Final visualizations</figcaption>
+                                </figure>
+                        </div>
+                    <div class="col-sm-8 project-section">
+                        <h4 class="subtitle">The Interaction:</h4>
+                        <p> In addition to the interaction with individual visualizations. I also created coordinated interaction
+                            between visualizations that allow the users to interpret and explore more as needed. The bar
+                            chart encodes two attributes using a line mark with the vertical spatial position channel for
+                            the quantitative attribute, the claim incurred costs and the horizontal spatial position channel
+                            for the categorical attribute, major cities in Lower Mainland. The hexbin map will update accordingly
+                            when users filter the cities and collision types in the bar chart by clicking on each bar, so
+                            as to see the dominant type of car accidents reported in each city.
+                        </p>
+                    </div>
+                    <div class="row col-sm-8">
+                        <figure>
+                            <video class="embed-responsive mx-auto" autoplay loop controls muted>
+                                <source src="img/video/hexbin.mp4" type="video/mp4">
+                            </video>
+                            <figcaption class="caption text-center mb-5">Coordinated interaction: histogram & hexbin map</figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col-sm-8 project-section">
+                        <h4 class="subtitle">Reflection</h4>
+                        <p>ICBC visual analytics was a challenging project. In order to create the ideal visualizations, I searched
+                            and took inspirations from some of Mike Bostock's examples. It was quite challenging as I am
+                            still new to the D3 library and some changes of syntax between the old and new versions. I would
+                            like to implement the coordinated interaction between the historical trends of accidents and
+                            choropleth map in the future.</p>
+                        <p> This project really allowed me to put together different types of skills and learn a lot during the
+                            process. Through the project, I learned the intricacies of managing, working with data and transforming
+                            it into useful and readable information.
+                        </p>
+                        <figure>
+                            <img class="mt-5" src="img/icbc_analytics.png" alt="render">
+                        </figure>
+                    </div>
+                    <div class="col-sm-8     text-center mb-5">
+                        <a class="btn-orange" href="f&h.html">Another project?</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
