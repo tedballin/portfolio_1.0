@@ -28,7 +28,7 @@ footer{margin-top:5em;font-size:.8em;}
 .wrapper{padding:0 30px;max-width:1280px !important;margin-right:auto;margin-left:auto;}
 .logo{max-width:40px;}
 .col-fixed-180{width:160px;height:100%;}
-.header{position:sticky;z-index:9;top:0;}
+.header{position:sticky;z-index:2;top:0;}
 .navbar{padding:4em 1em;background:#fff;}
 .nav-item{margin-bottom:2em;}
 .nav-btn{padding:0 1em;color:#3D3937;}
@@ -70,7 +70,7 @@ input[type=text],input[type=email],
 textarea{width:100%;padding:12px 20px;margin:8px 0;border:3px solid #95989A;-webkit-transition:0.5s;transition:0.5s;outline:none;resize:none;
 }
 textarea{height:10em;}
-input[type=text]:focus,
+input[type=text]:focus, input[type=email]:focus,
 textarea:focus{border:3px solid #F04B23;}
 .sm-img{max-width:40px;}
 .btn-orange{background:#F04B23;color:#fff;height:40px;width:160px;padding:1em 3em;text-align:center;}
