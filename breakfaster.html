@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Yang Zhang. Portfolio.</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="img/logo.png">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="row header">
+            <div class="navbar col-12">
+                <a class="navbar-brand" href="index.html">
+                    <img class="logo" src="img/logo.png" alt="logo">
+                </a>
+                <div class="navbar-nav">
+                    <span class="toggle" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+                    <a class="ln" href="#">En</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-fixed-180 position-fixed">
+                <ul class="navbar-nav side-nav">
+                    <li class="nav-item">
+                        <a class="nav-btn" href="work.html">work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-btn" href="about.html">about</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-btn" href="contact.html">contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="toggleNav">
+                <a class="closebtn" onclick="closeNav()">&times;</a>
+                <ul class="toggle-nav">
+                    <li class="nav-item">
+                        <a href="work.html">work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html">about</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html">contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col content-wrapper">
+                <div class="row justify-content-center">
+                    <div class="col-11 text-center project-container">
+                        <img src="img/bfaster_1.png" alt="cover">
+                        <div class="project-title">
+                            <h1>Breakfaster</h1>
+                        </div>
+                        <hr class="mt-5" />
+                    </div>
+
+                    <div class="col-sm-8 project-section ">
+                        <h4 class="subtitle">The Project</h4>
+                        <p>Breakfaster is a web (mobile friendly) application that centralizes and streamlines
+                            administrative tasks for Breakfast Club of Canada staff, school breakfast program
+                            coordinators, and volunteers. It helps users to plan and prepare breakfast meals,
+                            browse and create recipes, and order ingredients for future meals.
+                        </p>
+                    </div>
+                    <div class="col-sm-5 ">
+                        <figure>
+                            <video class="embed-responsive mobile demo-margin" autoplay loop controls muted>
+                                <source src="img/video/bfaster_1.mp4" type="video/mp4">
+                            </video>
+                            <figcaption class="caption demo-caption">Interactive prototype - Mobile</figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <h5 class="type-title">Type：</h5>
+                        <p>UX Design
+                            <br>
+                            <b>Non-profeit Project</b>
+                        </p>
+                        <h5 class="type-title">Tools：</h5>
+                        <p>Adobe Xd, Figma
+                        </p>
+                        <h5 class="type-title">Interactive Prototype:</h5>
+                        <p>
+                            <a href="https://xd.adobe.com/view/0e1ae300-477f-41b0-6302-c2d6d50ea577-782b/" target="_blank"
+                                class="project-link">Link</a>
+                        </p>
+                        <h5 class="type-title">Team:</h5>
+                        <p>Sofia
+                        </p>
+                    </div>
+
+                    <div class="col-sm-8 project-section">
+                        <h4 class="subtitle">Foundational Research:</h4>
+                        <p>After the first meeting with the client (Breakfast Club of Canada), we knew the
+                            application is more than a simple combination of recipe and meal planning tools. We
+                            started our foundational research in order to understand the landscape of the project
+                            and uncover insights into the users' behaviours, needs, and goals. By
+                            conducting user interviews with Breakfast Club staff, both urban and rural school
+                            staff (teachers facilitating the breakfast program), and executives of Langley School
+                            District Foundation (partner of Breakfast Club of Canada), we learned the interviewees’
+                            daily
+                            work routines, challenges encountered, technology usage, and context of use.
+                        </p>
+                    </div>
+                    <div class="col-sm-8">
+                        <figure class="text-center">
+                            <img class="mt-3" src="img/bfast_interview.JPG" alt="testing">
+                            <figcaption class="caption text-center mb-5">User interview with the school teacher and
+                                executive of Langley School
+                                District Foundation</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-sm-8 project-section">
+                        <h4 class="subtitle">The Problems:</h4>
+                        <p>By conducting the these user interviews, we defined several issues:
+                            School coordinators often create weekly menu, track inventory and make
+                            orders for ingredients without using any technical tools, these type of mental work are
+                            difficult for students and
+                            volunteers as they are unable to keep track of all the details and help to ease the
+                            workload; school coordinators are
+                            also seeking some flexibility in terms of food ingredients as local supplies might vary.
+                            Executives of local school district foundation mentioned the difficulty of maintaining
+                            breakfast variety which ultimately related to funding. The staff at BCC concerned that
+                            whether schools follow the recommended ingredient list and make nutritious breakfast for
+                            students.
+                        </p>
+                    </div>
+
+                    <div class="col-sm-8 project-section">
+                        <h4 class="subtitle">Strategy: </h4>
+                        <p>We used several UX methods such as user story mapping, persona, and user journey in
+                            order to explore the pain points, synthesize findings, and come up with some ideas. We
+                            envisioned an all-in-one platform is needed to help users to plan and prepare breakfast
+                            meals by browsing and adding recipes, track current inventory and expense, and order
+                            ingredients for future meals.</p>
+                        <figure class="text-center my-5">
+                            <img class="mt-3" src="img/bfast_storymapping.jpg" alt="sketch">
+                            <figcaption class="caption text-center">User story mapping process</figcaption>
+                        </figure>
+                        <p>We mapped out user stories for both school and BCC staff, the goals were to
+                            understand the overall flow, find out obstacles they are experiencing, and identify pain
+                            points or design opportunities. We focused our efforts on understanding the phases of
+                            the plan, order, and coordinate. The application or solution should be convenience and
+                            resourceful that helps to offload extensive information for different users.
+                        </p>
+                    </div>
+
+                    <div class="col-sm-8 project-section">
+                        <h4 class="subtitle">Exploration: </h4>
+                        <p> With the basic understandings of the project and our target audience‘s needs, I
+                            sketched dozens of wireframes for both desktop and mobile views in order to visualize
+                            and validate our ideas quickly. After an initial discussion with my partner in the
+                            team, I reiterated the sketches and created digital wireframes in Figma. In addition to
+                            wireframes, I also built a sitemap and shared them with our developers. Based on the
+                            wireframes and sitemap, the team discussed key features, app flow for the public,
+                            school, and BCC users, initial database design, as well as technical feasibilities and
+                            options.
+                        </p>
+                    </div>
+                    <div class="col-sm-8">
+                        <figure class="text-center">
+                            <img class="mt-3" src="img/bfast_exploration.png" alt="sketch">
+                            <figcaption class="caption text-center">Preliminary sketches and sitemap</figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col-sm-8 project-section">
+                        <h4 class="subtitle">Current Proposal</h4>
+                        <p> The project is still in process currently, I created most high-fidelity interactive mocks
+                            and we have sent our design proposal to the client for approval. Some key features for
+                            fulfilling users’ needs include: recipe feature that saves healthy breakfast recipes
+                            recommended by BCC or custom recipes; menu feature that allows users to add
+                            selected recipes and generate weekly menu, pantry feature that helps to track food
+                            inventory; order feature that enables user to order ingredients based on future weekly
+                            menu and current inventory.
+                        </p>
+                        <figure class="text-center">
+                            <img class="mt-3" src="img/bfast_style.png" alt="styleguide">
+                            <figcaption class="caption text-center">Visual style guide</figcaption>
+                        </figure>
+                    </div>
+                    <div class="row col-sm-8 justify-content-between">
+                        <figure>
+                            <video class="embed-responsive mx-auto" autoplay loop controls muted>
+                                <source src="img/video/bfast_create&order.mp4" type="video/mp4">
+                            </video>
+                            <figcaption class="caption text-center mb-5">Creating weekly menu & generating order list - Desktop</figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col-sm-8 project-section">
+                        <h4 class="subtitle">Challenges</h4>
+                        <p> Designing the mobile view was one of the biggest challenges I encountered. Because of
+                            the features needed and multi-level of administrations involved, the user interface of the
+                            application is relatively complex, and that is also the reason we decided to build a web
+                            instead of a mobile application. At the same time, we need to focus on mobile
+                            responsive design to fit the usage context of the target audience, since users might use
+                            it in the kitchen or food storage room. I used mobile-first approach to prioritize most
+                            essential and frequently used features since the screen real estate on the mobile device
+                            is so limited. During the design process, the borderline between mobile app interface
+                            and mobile site interface got blurred, it seems natural for us to follow design
+                            conventions that commonly used in mobile apps, but these design conventions do not
+                            always apply to the mobile site. For example, turning the control panel into tab bar at the
+                            bottom causes visual inconsistency between mobile and desktop view, and users who
+                            resizing the browser window on a mobile device (tablet) might find the transition is not
+                            intuitive. Instead, I used tab bar for major features at the top as well as utility
+                            features like print, bookmark, and share.
+                        </p>
+                        <figure class="text-center">
+                            <img class="mt-3" src="img/bfast_desktop&mobile.png" alt="desktop & mobile view">
+                            <figcaption class="caption text-center">Control panel in the desktop view and top tab bar
+                                in the mobile view</figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col-sm-8 project-section">
+                        <h4 class="subtitle">Reflection</h4>
+                        <p> The project is challenging yet captivating, as it is my first-time work on an end-to-end
+                            project in the real world. I learned to be fluid working with my team members as well as
+                            different stakeholders. Currently, our project is on hold due to other factors such as
+                            technical capabilities and maintenance concerns on the client’s side, but I am confident
+                            to iterate under different circumstances and deliver a convenience and resourceful tool
+                            to the end users.
+                        </p>
+                        <figure>
+                            <img class="mt-5" src="img/breakfaster_bcc.png" alt="bfast">
+                        </figure>
+                    </div>
+                    <div class="col-sm-8     text-center mb-5">
+                        <a class="btn-orange" href="novii-app.html">Another project?</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
